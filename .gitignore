@@ -1,8 +1,11 @@
 # Ignore all files
 *
 
-# Unignore specific files or extensions
+# Unignore specific extensions
 !.gitignore
 !*.md
 !*.c
+!*.txt
 
+# Unignore directories
+!*/
