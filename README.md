@@ -2,11 +2,11 @@
 
 ## Exercice 1. Premier exemple
 
-1. En vous insipirant de l’exemple vu en cours (cf. transparents de cours), écrivez un programme qui démarre trois *threads* qui affichent « `Bonjour\n` ».
+1. En vous insipirant de l’exemple vu en cours (cf. transparents de cours), écrivez un programme qui démarre trois *threads* qui affichent «`Bonjour\n`».
 
     **Indication :** Il faut penser à mettre les bonnes options au moment de la compilation.
 
-1. Modifiez le programme de la question précédent pour que chaque *thread* reçoive en argument un numéro unique (0, 1 et 2) et qu’il affiche son numéro après le message (« `Bonjour (1)\n` » pour le thread numéro 1).
+1. Modifiez le programme de la question précédent pour que chaque *thread* reçoive en argument un numéro unique (0, 1 et 2) et qu’il affiche son numéro après le message («`Bonjour (1)\n`» pour le thread numéro 1).
 
     **Indication :** La fonction exécutée par un *thread* ne peut recevoir qu’un seul argument qui est nécessairement de type `(void *)`. Il faut dont lui passer l’adresse d’un entier et récupérer cet argument dans une variable de type `(int *)` dans la fonction.
     
