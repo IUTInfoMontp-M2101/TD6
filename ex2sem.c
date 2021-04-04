@@ -9,7 +9,8 @@ static sem_t semaphore; // déclaration d'une variable globale
 void *start_routine1 (void * arg) {
     printf ("Début du thread 1\n");
     sleep (1);
-    sem_wait(&semaphore); // attendre le sémaphore printf ("Fin du thread 1\n");
+    sem_wait(&semaphore); // attendre le sémaphore
+    printf ("Fin du thread 1\n");
     pthread_exit (0);
 }
 
@@ -17,7 +18,8 @@ void *start_routine2 (void * arg) {
     printf ("Début du thread 2\n");
     sleep (2);
     printf ("Fin du thread 2\n");
-    sem_post(&semaphore); // libérer le sémaphore pthread_exit (0);
+    sem_post(&semaphore); // libérer le sémaphore
+    pthread_exit (0);
 }
 
 int main (int argc, char **argv) {
